@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+     // declare variables
+     int number=0;
+     int counter=1;
+     
+     // get data from user
+     cout<<"Enter a number: ";
+     cin>>number;
+     
+     // this is the start of the nested loop.
+     // NOTE: many use two nested 'for' loops, but
+     // sometimes its nice to switch things up
+     while(counter <= number)
+     {
+          for(int x=0; x < counter; ++x)
+          {
+               cout<<"* ";
+          }
+          cout<<endl;
+          ++counter;
+     }
+     
+     return 0;
+}
